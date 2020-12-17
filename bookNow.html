@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   
+   <!-- Global site tag (gtag.js) - Google Analytics tool- allows us to view traffic to the website -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN1F17FHBB"></script>
+				<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-QN1F17FHBB');
+				</script>
+   
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Please book an appointment. Welcome to the T.A.J Medical Clinic. We are a family practice based in Dublin. Our consultation-led clinics will provide you urgent care for minor injuries and illnesses from Mon - Fri 8am to 6pm, Saturday from 9am to 3pm and Sunday by appointment only.">
+  <meta name="keywords" content="doctor, nurse, medical clinic, family practice, dublin, health, health care, clinic, medical care, dublin city center, gp consultation, vaccinations, blood test, maternity, book an appointment,">
+  <meta name="author" content="TAJ">
+     <link rel="icon" type="image/icon" href="images/PNG/businessLogo.png">
+      <title>Book an appointment | T.A.J Medical Clinic</title>
+      <!-- Change href="style.css" to corresponding CSS file -->
+      <link rel="stylesheet" href="Booking_style.css">
+       <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <!-- Date/ time picker -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css" />
+   </head>
+   <body>
+      <!-- Header -->
+      <header>
+         <div class="container">
+            <!-- Navigation Section-->
+            <nav class="navigation-bar">
+              <div class="business-name"><span class="highlight">T.A.J</span> Medical Clinic</div>
+               <!-- Toggle button for mobile devices -->
+               <a href="#" class="toggle-button">
+               <span class="line"></span>
+               <span class="line"></span>
+               <span class="line"></span>
+               </a>
+               <!-- Links -->
+               <div class="navigation-links">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="bookNow.html">Book Now</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class="header-top">
+            <ul>
+               <li>Mayor Street Lower, International Financial Services Centre, Dublin</li>
+                <li> <a href="tel:+1-303-499-7111"> Tel: 01 4498 500</a> </li>
+               <li><a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp">taj.medical.clinic@tmc.com</a></li>
+            </ul>
+         </div>
+      </header>
+      <!-- Main description section -->
+      <section id="main">
+         <div class="container">
+         <h1> Please, book an appointment </h1>
+         <form name="bookingForm" id="bookingFormID" method="POST" action="MAILTO:timur.huseynov1@gmail.com">
+            <table id="contactTable">
+               <tr>
+                  <td> Please, enter your full name </td>
+                  <td><input type="text" name="fullName" size="35" required /> <br/></td>
+               </tr>
+               <tr>
+                  <td> Please, enter your email address </td>
+                  <td> <input type="text" name=email id="UserEmail" required size="35"/> <br/></td>
+               </tr>
+               <tr>
+                  <td>  Please, enter your full physical address </td>
+                  <td>  <input type="text" name="UserEmail"  value="" size="35" />
+               </tr>
+               <tr>
+                  <td> How we can help?  <br/> </td>
+                  <td>
+                     <select name="service-type" id="serviceId" class="buttons" onchange="serviceAlert();">
+                        <option id="GP" class="buttons" value="1">GP Consultation</option>
+                        <option id="BloodTest" value="2">Blood Test </option>
+                        <option id="Women" value="3">Women's Health</option>
+                        <option id="Men" value="4">Men's Health</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td> Please, select your gender <br/> </td>
+                  <td> <input type="radio" name="gender" value="male"> Male <br>
+                     <input type="radio" name="gender"  value="female" /> Female <br>
+                     <input type="radio" name="gender" value="N/A" /> Prefer not to answer <br> 
+                  </td>
+               </tr>
+               <tr>
+                  <td>Any special requests </td>
+                  <td> <textarea rows = "5" cols="29"></textarea>
+               </tr>
+               <!-- key buttons still organized in the table on the left side to reset details, calculate order cost, discount and final cost -->
+               <tr>
+                  <td> Reset details </td>
+                  <td> <input type="Reset" class="buttons" /> </td>
+               </tr>
+               <tr>
+                  <td> I understand and accept the Terms & Conditions </td>
+                  <td> <input type="checkbox" id="confirmTerms" required /> </td>
+               </tr>
+               <tr>
+                  <td> Please, indicate preferred appointment time </td>
+                  <td>
+                     <input type="text" id="datepicker" class="buttons" required value="Please, select a preferrable timeslot"/>
+                     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+                     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+               </tr>
+               <tr>
+                  <td> Book an appointment </td>
+                  <td> <input id="button" class="buttons" type="Submit" value = "Book"/> </td>
+               </tr>
+            </table>
+         </form>
+       </div>
+      </section>
+
+      <!-- Footer section -->
+   <footer>
+    <div id="social-media">
+      <div class="media">
+        <ul>
+          <li>
+            <a href="https://twitter.com/?lang=en"><img class="icons" src="images/PNG/twitter-brands.png" alt="twitter-logo"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"><img class="icons" src="images/PNG/instagram-brands.png" alt="instagram-logo"></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"><img class="icons" src="images/PNG/facebook-brands.png" alt="facebook-logo"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/login"><img class="icons" src="images/PNG/linkedin-in-brands.png" alt="linkedin-logo"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; T.A.J Medical Clinic 2020. All rights reserved.</p>
+  </footer>
+      <!-- Import of JavaScript file-->
+      <script src="Booking_script.js"></script>
+   </body>
+</html>
