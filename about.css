@@ -65,6 +65,10 @@ body {
   color: #fff;
 }
 
+.navigation-links .current {
+  color: #d60570;
+}
+
 /****** toggle button will appear when screen size is narrower ******/
 .toggle-button {
   position: absolute;
@@ -109,7 +113,7 @@ body {
 /******  Main description section ******/
 #main {
   min-height: 450px;
-  background-image: url(images/JPG/2Clinic-1500x630.jpg);
+  background-image: url(images/JPG/aboutus.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -217,26 +221,6 @@ footer {
   }
 }
 
-/****** Boxes: services icons etc. ******/
-.box img {
-  width: 150px;
-}
-
-.box ul {
-  list-style: none;
-  text-align: center;
-}
-
-.box li {
-  display: inline-block;
-  width: 20%;
-  margin: 2em;
-}
-
-.box p {
-  font-size: 1em;
-}
-
 /****** Social media icons ******/
 .social-media {
   position: absolute;
@@ -322,17 +306,5 @@ footer {
 @media (max-width: 768px) {
   #social-media {
     display: inline-block;
-  }
-
-  #boxes .box ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 75%;
-    padding: 1% 1% 1% 10%;
-  }
-
-  .box img {
-    margin-left: 30%;
   }
 }
