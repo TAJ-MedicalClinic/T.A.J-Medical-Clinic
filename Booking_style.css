@@ -6,7 +6,7 @@
   padding-left: 30%;
 }
 
-#main h1 {
+#main-booking h1 {
   margin-top: 1em;
   font-size: 45px;
   padding-left: 30%;
@@ -86,6 +86,10 @@ body {
   color: #fff;
 }
 
+.navigation-links .current {
+  color: #d60570;
+}
+
 /****** toggle button will appear when screen size is narrower ******/
 .toggle-button {
   position: absolute;
@@ -128,21 +132,12 @@ body {
 }
 
 /******  Main description section ******/
-#main {
-  min-height: 750px;
-  background-image: url(images/JPG/2Clinic-1500x630.jpg);
+#main-booking {
+  min-height: 720px;
+  background-image: url(images/JPG/appointment.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.business-logo img {
-  border-radius: 50%;
-  width: 150px;
-  margin-left: 43%;
-  margin-bottom: 0;
-  margin-top: 0.5%;
-  padding-bottom: 0;
 }
 
 /****** Social media icons ******/
@@ -177,7 +172,6 @@ body {
 /****** Footer copyright ******/
 footer {
   padding: 10px;
-  margin-top: 10px;
   color: #000;
   background-color: rgb(170, 169, 169);
   text-align: center;
@@ -185,12 +179,6 @@ footer {
 
 /****** Media query responsiveness for mobile devices on navigation bar, header top and logo ******/
 @media (max-width: 768px) {
-  .business-logo img {
-    width: 10%;
-    display: flex;
-    padding-right: 5%;
-  }
-
   .toggle-button {
     display: flex;
   }
@@ -237,32 +225,16 @@ footer {
 
 /****** Media query responsiveness for mobile devices on main content, icons,footer ******/
 @media (max-width: 768px) {
-  #main,
-  #main .opening-time {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  #main-booking {
+    display: block;
     width: 100%;
   }
 
-  #main .business-logo img {
-    text-align: center;
-    width: 20%;
+  table {
+    display: block;
   }
 
-  #social-media {
+  table #social-media {
     display: inline-block;
-  }
-
-  #boxes .box ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 75%;
-    padding: 1% 1% 1% 10%;
-  }
-
-  .box img {
-    margin-left: 30%;
   }
 }
