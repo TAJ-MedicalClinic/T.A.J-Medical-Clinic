@@ -136,7 +136,7 @@ body {
 .header-top ul {
   display: flex;
   margin-left: 0;
-  padding-left: 30%;
+  padding-left: 27%;
 }
 
 .header-top li {
@@ -230,6 +230,10 @@ footer {
 
 /****** Media query responsiveness for mobile devices on navigation bar, header top and logo ******/
 @media (max-width: 768px) {
+  .business-name {
+    margin-left: 0.5em;
+  }
+
   .toggle-button {
     display: flex;
   }
@@ -276,6 +280,20 @@ footer {
 
 /****** Media query responsiveness for mobile devices on main content, icons,footer ******/
 @media (max-width: 768px) {
+  #main p {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  #main table {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
   #main #price {
     display: flex;
     flex-direction: column;
