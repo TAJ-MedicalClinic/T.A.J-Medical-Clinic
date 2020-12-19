@@ -92,7 +92,7 @@ body {
 .header-top ul {
   display: flex;
   margin-left: 0;
-  padding-left: 30%;
+  padding-left: 27%;
 }
 
 .header-top li {
@@ -261,6 +261,10 @@ footer {
 
 /****** Media query responsiveness for mobile devices on navigation bar, header top and logo ******/
 @media (max-width: 768px) {
+  .business-name {
+    margin-left: 0.5em;
+  }
+
   .business-logo img {
     width: 10%;
     display: flex;
@@ -320,6 +324,15 @@ footer {
     width: 100%;
   }
 
+  #main p,
+  table,
+  h3 {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
   #main .business-logo img {
     text-align: center;
     width: 20%;
@@ -334,11 +347,11 @@ footer {
     flex-direction: column;
     text-align: center;
     width: 75%;
-    padding: 1% 1% 1% 10%;
+    padding: 1% 1% 1% 5%;
   }
 
   .box img {
-    margin-left: 30%;
+    margin-left: 25%;
   }
 }
 
@@ -360,6 +373,6 @@ footer {
   }
 
   .box img {
-    margin-left: -15%;
+    margin-left: -5%;
   }
 }
